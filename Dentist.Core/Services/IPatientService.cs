@@ -9,6 +9,11 @@ namespace Dentist.Core.Services
 {
     public interface IPatientService
     {
-        public List<Patient> GetList();
+        public IEnumerable<Patient> GetList();
+
+
+        public Patient Get(int id);
+
+        public Patient Add(Patient patient);
     }
 }
